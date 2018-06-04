@@ -50,7 +50,7 @@ class TasksController extends Controller
             'content' => 'required|max:10',
         ]);
         $task = new Task;
-        $task->title = $request->title;
+        $task->status = $request->status;
         $task->content = $request->content;
         $task->save();
 
@@ -100,7 +100,7 @@ class TasksController extends Controller
             'content' => 'required|max:10',
         ]);
         $task = Task::find($id);
-        $task->title = $request->title;
+        $task->status = $request->status;
         $task->content = $request->content;
         $task->save();
 
