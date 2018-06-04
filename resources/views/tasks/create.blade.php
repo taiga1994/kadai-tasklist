@@ -9,6 +9,9 @@
 
         {!! Form::label('content', 'Task:') !!}
         {!! Form::text('content') !!}
+        
+        {!! Form::label('content', 'メッセージ:') !!}
+        {!! Form::text('content') !!}
 
         {!! Form::submit('追加') !!}
 
